@@ -1,0 +1,55 @@
+    #game{
+    width: 600px;
+    height:200px;
+    border-bottom: solid 6px rgba(0, 0, 0, 0.944);
+    margin: auto;
+}
+#dino{
+    width: 50%;
+    height: 50px;
+    background-image: url(https://www.kindpng.com/picc/m/108-1085324_chrome-dinosaur-png-t-rex-google-png-transparent.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+#cactus{
+    width: 30px;
+    height: 40%;
+    background-image: url(https://icon-library.com/images/cactus-icon/cactus-icon-19.jpg);
+    background-repeat: no-repeat;
+    background-size: 30px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactus 2s infinite linear;
+}
+@keyframes cactus {
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+.jump{
+    animation: jump 0.5s linear;
+    
+}
+@keyframes jump{
+    0%{
+        top: 150px;
+    }
+    30%{
+        top: 130px;
+    }
+    50%{
+        top: 80px;
+    }
+    80%{
+        top: 130px;
+    }
+    100%{
+        top: 150px;
+    }
+}
